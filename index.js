@@ -28,7 +28,6 @@ const storage = multerS3({
 const upload = multer({ storage })
 
 app.post('/upload', upload.array('fileData'), (req, res) => {
-  console.log(req)
   res.send({
     message: 'File Uploaded Successfully',
     uploaded: req.files.length,
