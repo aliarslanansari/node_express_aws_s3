@@ -11,6 +11,7 @@ const PORT = process.env.PORT || 3000
 const s3 = new aws.S3({
   accessKeyId: process.env.AWS_ACCESS_KEY_ID,
   secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
+  //sessionToken is required only if you are using awseducate account.
   sessionToken: process.env.AWS_SESSION_TOKEN,
 })
 
@@ -21,7 +22,7 @@ const storage = multerS3({
     const ext = path.extname(file.originalname)
     cb(null, `${v4()}${ext}`)
   },
-  acl: 'public-read', //comment if you don't want the uploaded file to be publicly accessible
+  acl: 'public-read', //comment this if you don't want the uploaded file to be publicly accessible
 })
 
 const upload = multer({ storage })
