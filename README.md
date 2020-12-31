@@ -2,12 +2,12 @@
 
 ### Packages used
 
-- [express](https://www.npmjs.com/package/express)
-- [uuid](https://www.npmjs.com/package/uuid)
-- [path](https://www.npmjs.com/package/path)
-- [aws-sdk](https://www.npmjs.com/package/aws-sdk)
-- [multer](https://www.npmjs.com/package/multer)
-- [multer-s3](https://www.npmjs.com/package/multer-s3)
+- [express](https://www.npmjs.com/package/express){:target="\_blank"}
+- [uuid](https://www.npmjs.com/package/uuid){:target="\_blank"}
+- [path](https://www.npmjs.com/package/path){:target="\_blank"}
+- [aws-sdk](https://www.npmjs.com/package/aws-sdk){:target="\_blank"}
+- [multer](https://www.npmjs.com/package/multer){:target="\_blank"}
+- [multer-s3](https://www.npmjs.com/package/multer-s3){:target="\_blank"}
 
 ## Installation
 
@@ -24,7 +24,7 @@ cd node_express_aws_s3
 ```
 
 Then run the following command to install all the packages from packages.json file.
-Note that yarn or npm must be installed in your system (or install from here [Node](https://nodejs.org/en/download/) | [Yarn](https://classic.yarnpkg.com/en/docs/install/))
+Note that yarn or npm must be installed in your system (or install from here [Node](https://nodejs.org/en/download/){:target="\_blank"} | [Yarn](https://classic.yarnpkg.com/en/docs/install/){:target="\_blank"})
 
 ```
 npm install
