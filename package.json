@@ -1,0 +1,32 @@
+{
+  "name": "node_express_aws_s3",
+  "version": "1.0.0",
+  "description": "NodeJS ExpressJs File Upload to AWS S3 Template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aliarslanansari/node_express_aws_s3.git"
+  },
+  "keywords": [
+    "aws",
+    "s3",
+    "express",
+    "fileupload",
+    "file",
+    "upload",
+    "awss3",
+    "multers3"
+  ],
+  "author": "ALI ARSALAN",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aliarslanansari/node_express_aws_s3/issues"
+  },
+  "homepage": "https://github.com/aliarslanansari/node_express_aws_s3#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
