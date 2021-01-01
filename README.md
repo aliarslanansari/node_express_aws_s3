@@ -9,6 +9,8 @@
 - [multer](https://www.npmjs.com/package/multer)
 - [multer-s3](https://www.npmjs.com/package/multer-s3)
 
+Navigate to index.js file in the root directory to find the complete code.
+
 ## Installation
 
 Clone this repository to your local machine by running the following command in your local system.
