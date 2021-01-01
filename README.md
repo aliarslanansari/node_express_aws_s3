@@ -1,4 +1,4 @@
-# Upload files to AWS S3 using NodeJS Express Server
+# Upload files to AWS S3 from NodeJS Express Server
 
 ### Packages used
 
