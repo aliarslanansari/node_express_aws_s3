@@ -93,29 +93,32 @@ To test the server is working properly, you'll need to send a post request to up
 
 Open Postman and do the following
 
-1. create a new **POST** request
+![Postman Snapshot](./s3_postman_snap.PNG)
+
+1. Create a new **POST** request
 2. Add the endpoint URL as below
 
    ```
    localhost:3000/upload
    ```
 
-3. Navigate to body
+3. Navigate to Body
 4. Enter the key as **fileData** (we have used same key in the code, [line: 30](https://github.com/aliarslanansari/node_express_aws_s3/blob/f0baebe581f72c3523cd1249d85a60f6666b0934/index.js#L30))
 5. Select value type as **File** from the end of Key input field (by default it is Text)
 6. Upload file from Value column, click on **Select Files**
-7. Click on **Send** button
-8. You'll get the following response from the server
+7. After selecting files, Click on **Send** button
 
-   ```
-    {
-        "message": "File Uploaded Successfully",
-        "uploaded": 1,
-        "filesPath": [
-            "https://bucket-name.s3.amazonaws.com/8dfdsf3-a723-4280-bbd1-7b9c05249720.png"
-        ]
-    }
-   ```
+**You'll get the following response from the server**
+
+```
+ {
+     "message": "File Uploaded Successfully",
+     "uploaded": 1,
+     "filesPath": [
+         "https://bucket-name.s3.amazonaws.com/8dfdsf3-a723-4280-bbd1-7b9c05249720.png"
+     ]
+ }
+```
 
 ## Note
 
