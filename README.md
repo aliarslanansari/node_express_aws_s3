@@ -91,7 +91,7 @@ npm start
 
 To test the server is working properly, you'll need to send a post request to upload file to s3, we can test the server using REST client application **Postman** (you can install Postman from [here](https://www.postman.com/downloads/))
 
-Open Postman
+Open Postman and do the following
 
 1. create a new **POST** request
 2. Add the endpoint URL as below
@@ -102,3 +102,21 @@ Open Postman
 
 3. Navigate to body
 4. Enter the key as **fileData** (we have used same key in the code, [line: 30](https://github.com/aliarslanansari/node_express_aws_s3/blob/f0baebe581f72c3523cd1249d85a60f6666b0934/index.js#L30))
+5. Select value type as **File** from the end of Key input field (by default it is Text)
+6. Upload file from Value column, click on **Select Files**
+7. Click on **Send** button
+8. You'll get the following response from the server
+
+   ```
+    {
+        "message": "File Uploaded Successfully",
+        "uploaded": 1,
+        "filesPath": [
+            "https://bucket-name.s3.amazonaws.com/8dfdsf3-a723-4280-bbd1-7b9c05249720.png"
+        ]
+    }
+   ```
+
+## Note
+
+If you've set `acl:'public-read'` in the object which is passed to multerS3 on [line:25](https://github.com/aliarslanansari/node_express_aws_s3/blob/1e1f9dc164511bf74c1e30a2f9e5e01f83f6307d/index.js#L25) then file can be directly accessed from the URL returned from server in filesPath array.
