@@ -104,7 +104,7 @@ Open Postman and do the following
    localhost:3000/upload
    ```
 
-3. Navigate to Body
+3. Navigate to Body and select form-data
 4. Enter the key as **fileData** (we have used same key in the code, [line: 30](https://github.com/aliarslanansari/node_express_aws_s3/blob/f0baebe581f72c3523cd1249d85a60f6666b0934/index.js#L30))
 5. Select value type as **File** from the end of Key input field (by default it is Text)
 6. Upload file from Value column, click on **Select Files**
